@@ -140,3 +140,21 @@ WHERE type='silver'
 
 DELETE FROM practice_delete
 WHERE value = 150
+
+create table user (
+	id integer primary key,
+  	email varchar(30)
+)
+/* Products need a name and a price */
+create table product (
+	id integer primary key,
+  	name varchar(30),
+  	price float
+)
+/* Orders need a ref to product. */
+create table orders (
+	id integer primary key,
+  	userid references user(id)
+  	productid references product(id)
+)
+/* All 3 need primary keys. */
