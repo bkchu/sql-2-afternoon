@@ -131,3 +131,6 @@ SELECT DISTINCT composer FROM TRACK;
 SELECT DISTINCT billingpostalcode FROM invoice
 
 SELECT DISTINCT company FROM customer
+
+DELETE FROM practice_delete
+WHERE type='bronze'
