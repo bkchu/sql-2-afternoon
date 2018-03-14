@@ -25,3 +25,9 @@ FROM playlisttrack pt
 JOIN playlist p
 ON pt.playlistid = p.playlistid
 WHERE p.name = 'Music';
+
+SELECT t.name
+FROM track t
+JOIN playlisttrack pt
+ON t.trackid = pt.trackid
+WHERE pt.playlistid = 5
