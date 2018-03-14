@@ -154,7 +154,7 @@ create table product (
 /* Orders need a ref to product. */
 create table orders (
 	id integer primary key,
-  	userid references user(id)
-  	productid references product(id)
+  	userid integer references user(id)
+  	productid integer references product(id)
 )
 /* All 3 need primary keys. */
