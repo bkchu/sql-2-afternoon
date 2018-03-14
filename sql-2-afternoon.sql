@@ -102,3 +102,10 @@ WHERE firstname = 'Julia' AND lastname = 'Barnett'
 UPDATE customer
 SET supportrepid = 4
 WHERE email = 'luisrojas@yahoo.cl'
+
+UPDATE track 
+SET composer = 'The darkness around us'
+WHERE genreid = (
+  SELECT genreid FROM genre
+  WHERE name = 'Metal'
+  ) AND composer IS NOT NULL
