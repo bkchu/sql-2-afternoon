@@ -90,3 +90,7 @@ WHERE albumid IN (
 UPDATE customer
 SET fax = null
 WHERE fax IS NOT NULL
+
+UPDATE customer
+SET company = 'Self'
+WHERE company IS NULL
