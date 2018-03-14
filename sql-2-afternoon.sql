@@ -125,3 +125,5 @@ SELECT ar.name, COUNT(*)
 FROM artist ar
 JOIN album a ON ar.artistid = a.artistid
 GROUP BY ar.artistid
+
+SELECT DISTINCT composer FROM TRACK; 
