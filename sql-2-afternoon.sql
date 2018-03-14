@@ -143,6 +143,7 @@ WHERE value = 150
 
 create table user (
 	id integer primary key,
+  name varchar(30),
   	email varchar(30)
 )
 /* Products need a name and a price */
