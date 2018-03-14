@@ -71,3 +71,9 @@ WHERE genreid IN (
   SELECT genreid FROM genre
   WHERE name = 'Comedy'
   )
+
+SELECT * FROM track
+WHERE albumid IN (
+  SELECT albumid FROM album
+  WHERE title = 'Fireball'
+  );
