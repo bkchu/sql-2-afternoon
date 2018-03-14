@@ -14,3 +14,8 @@ SELECT c.firstname, c.lastname, e.firstname, e.lastname
 FROM Customer c
 JOIN Employee e
 ON c.supportrepid = e.employeeid
+
+SELECT al.title, ar.name
+FROM Album al
+JOIN Artist ar
+ON ar.artistid = al.artistid
