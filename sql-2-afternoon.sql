@@ -1,3 +1,4 @@
+-- joins
 SELECT *
 FROM Invoice i
 JOIN InvoiceLine il
@@ -46,3 +47,10 @@ ON t.albumid = a.albumid
 JOIN genre g
 ON t.genreid = g.genreid
 WHERE g.name = 'Alternative'
+
+-- nested queries
+SELECT * FROM invoice
+WHERE invoiceid IN (
+  SELECT invoiceid FROM invoiceline
+  WHERE UnitPrice > 0.99
+)
