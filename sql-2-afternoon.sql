@@ -159,3 +159,20 @@ create table orders (
   	productid integer references product(id)
 )
 /* All 3 need primary keys. */
+
+INSERT INTO user (name, email)
+values ('brandon', 'bkchu@gmail.com'), ('nathan', 'nathan@gmail.com'), ('chris', 'chris@chriwf.com')
+
+INSERT INTO product (name, price)
+values ('cup', 3.99), ('mug', 9.99), ('barrel', 111.99);
+INSERT INTO orders(userid, productid, quantity, receipt_num)
+values
+(1,1,5,1),
+(1,2,5,1),
+(1,3,5,1),
+(2,1,6,2),
+(2,2,6,2),
+(2,3,6,2),
+(3,1,3,3),
+(3,2,3,3),
+(3,3,3,3);
