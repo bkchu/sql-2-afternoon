@@ -109,3 +109,9 @@ WHERE genreid = (
   SELECT genreid FROM genre
   WHERE name = 'Metal'
   ) AND composer IS NOT NULL
+
+SELECT COUNT(*), g.name
+FROM track t
+JOIN genre g ON t.genreid = g.genreid
+WHERE g.name = 'Pop' OR g.name= 'Rock'
+GROUP BY g.name
