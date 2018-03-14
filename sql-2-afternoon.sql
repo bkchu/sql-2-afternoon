@@ -54,3 +54,9 @@ WHERE invoiceid IN (
   SELECT invoiceid FROM invoiceline
   WHERE UnitPrice > 0.99
 )
+
+SELECT * FROM playlisttrack
+WHERE playlistid IN (
+	SELECT playlistid FROM playlist
+  	WHERE name = 'Music'
+)
