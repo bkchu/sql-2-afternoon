@@ -98,3 +98,7 @@ WHERE company IS NULL
 UPDATE customer
 SET lastname = 'Thompson'
 WHERE firstname = 'Julia' AND lastname = 'Barnett'
+
+UPDATE customer
+SET supportrepid = 4
+WHERE email = 'luisrojas@yahoo.cl'
