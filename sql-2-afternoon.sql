@@ -127,3 +127,5 @@ JOIN album a ON ar.artistid = a.artistid
 GROUP BY ar.artistid
 
 SELECT DISTINCT composer FROM TRACK; 
+
+SELECT DISTINCT billingpostalcode FROM invoice
