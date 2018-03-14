@@ -182,3 +182,5 @@ FROM Product p
 JOIN orders o
 ON p.id = o.productid
 WHERE o.receipt_num = 1
+
+SELECT * FROM ORDERS
