@@ -120,3 +120,8 @@ FROM track t
 JOIN genre g ON t.genreid = g.genreid
 WHERE g.name = 'Pop' OR g.name= 'Rock'
 GROUP BY g.name
+
+SELECT ar.name, COUNT(*)
+FROM artist ar
+JOIN album a ON ar.artistid = a.artistid
+GROUP BY ar.artistid
