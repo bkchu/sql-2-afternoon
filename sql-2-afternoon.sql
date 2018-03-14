@@ -110,6 +110,11 @@ WHERE genreid = (
   WHERE name = 'Metal'
   ) AND composer IS NOT NULL
 
+SELECT COUNT(*), g.name 
+FROM track t
+JOIN genre g ON t.genreid = g.genreid
+GROUP BY g.name
+
 SELECT COUNT(*), g.name
 FROM track t
 JOIN genre g ON t.genreid = g.genreid
