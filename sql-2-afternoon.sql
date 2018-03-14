@@ -60,3 +60,8 @@ WHERE playlistid IN (
 	SELECT playlistid FROM playlist
   	WHERE name = 'Music'
 )
+
+SELECT * FROM track
+WHERE trackid IN (
+  SELECT trackid from playlisttrack
+  WHERE playlistid = 5 )
