@@ -19,3 +19,9 @@ SELECT al.title, ar.name
 FROM Album al
 JOIN Artist ar
 ON ar.artistid = al.artistid
+
+SELECT pt.trackid 
+FROM playlisttrack pt
+JOIN playlist p
+ON pt.playlistid = p.playlistid
+WHERE p.name = 'Music';
