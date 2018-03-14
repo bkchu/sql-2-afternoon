@@ -189,3 +189,7 @@ SELECT SUM(p.price * o.quantity)
 FROM Product p
 JOIN Orders o ON p.id = o.productid
 WHERE o.receipt_num = 1
+
+SELECT o.*, u.name FROM Orders o
+JOIN user u ON u.id = o.userid
+WHERE u.name = 'nathan'
