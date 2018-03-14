@@ -86,3 +86,7 @@ WHERE albumid IN (
     WHERE name = 'Queen'
     )
   );
+
+UPDATE customer
+SET fax = null
+WHERE fax IS NOT NULL
