@@ -94,3 +94,7 @@ WHERE fax IS NOT NULL
 UPDATE customer
 SET company = 'Self'
 WHERE company IS NULL
+
+UPDATE customer
+SET lastname = 'Thompson'
+WHERE firstname = 'Julia' AND lastname = 'Barnett'
