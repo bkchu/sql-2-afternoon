@@ -38,3 +38,11 @@ JOIN playlisttrack pt
 ON t.trackid = pt.trackid
 JOIN playlist p
 ON p.playlistid = pt.playlistid
+
+SELECT t.name, a.title
+FROM track t
+JOIN album a
+ON t.albumid = a.albumid
+JOIN genre g
+ON t.genreid = g.genreid
+WHERE g.name = 'Alternative'
