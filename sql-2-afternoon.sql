@@ -31,3 +31,10 @@ FROM track t
 JOIN playlisttrack pt
 ON t.trackid = pt.trackid
 WHERE pt.playlistid = 5
+
+SELECT t.name, p.name 
+FROM track t
+JOIN playlisttrack pt
+ON t.trackid = pt.trackid
+JOIN playlist p
+ON p.playlistid = pt.playlistid
