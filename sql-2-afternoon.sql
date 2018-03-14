@@ -1,0 +1,1 @@
+SELECT * FROM invoiceline where unitprice > 0.99
