@@ -65,3 +65,9 @@ SELECT * FROM track
 WHERE trackid IN (
   SELECT trackid from playlisttrack
   WHERE playlistid = 5 )
+
+SELECT * FROM track
+WHERE genreid IN (
+  SELECT genreid FROM genre
+  WHERE name = 'Comedy'
+  )
