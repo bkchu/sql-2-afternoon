@@ -134,3 +134,6 @@ SELECT DISTINCT company FROM customer
 
 DELETE FROM practice_delete
 WHERE type='bronze'
+
+DELETE FROM practice_delete
+WHERE type='silver'
