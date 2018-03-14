@@ -77,3 +77,12 @@ WHERE albumid IN (
   SELECT albumid FROM album
   WHERE title = 'Fireball'
   );
+
+SELECT * FROM track
+WHERE albumid IN (
+  SELECT albumid FROM album
+  WHERE artistid IN (
+    SELECT artistid FROM artist
+    WHERE name = 'Queen'
+    )
+  );
