@@ -176,3 +176,9 @@ values
 (3,1,3,3),
 (3,2,3,3),
 (3,3,3,3);
+
+SELECT p.name
+FROM Product p 
+JOIN orders o
+ON p.id = o.productid
+WHERE o.receipt_num = 1
